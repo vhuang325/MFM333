@@ -1,0 +1,25 @@
+body {
+  background-image: url(/images/MFMCREST.png);
+  background-position: center 15%;
+  background-size: 1000px 750px;
+  background-repeat: no-repeat;
+}
+
+.image-button {
+  width: 15%; /* Adjust the width as needed */
+  height: auto; /* Automatically adjusts height based on aspect ratio */
+  background-image: url(/images/swampy.png);
+  background-color: transparent;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  top: 75%; /* Adjust the vertical positioning as needed */
+  left: 50%; /* Center the button horizontally */
+  transform: translateX(-50%); /* Center the button accurately */
+  padding: 10%; /* Adjust padding as needed */
+  z-index: -1;
+}

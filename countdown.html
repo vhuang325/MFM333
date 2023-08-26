@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+      #countdown {
+        width: 1000px; /* Adjust the width as needed */
+        height: 1000px; /* Automatically adjust height to maintain aspect ratio */
+      }
+    </style>
+  </head>
+  <body>
+    <img id="countdown" src="/images/5.png" alt="Countdown" />
+    <script>
+      let count = 5;
+      const countdownElement = document.getElementById("countdown");
+
+      const countdownInterval = setInterval(() => {
+        count--;
+
+        if (count >= 1) {
+          countdownElement.src = "images/" + count + ".png";
+        } else {
+          clearInterval(countdownInterval);
+          window.location.href = "index.html"; // Change this to your actual file name
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
