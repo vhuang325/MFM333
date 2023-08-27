@@ -1,25 +1,43 @@
-body {
-  background-image: url(/images/MFMCREST.png);
-  background-position: center 15%;
-  background-size: 1000px 750px;
-  background-repeat: no-repeat;
+/* Reset some default styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
 
-.image-button {
-  width: 15%; /* Adjust the width as needed */
-  height: auto; /* Automatically adjusts height based on aspect ratio */
-  background-image: url(/images/swampy.png);
-  background-color: transparent;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  border: none;
-  position: absolute;
-  top: 75%; /* Adjust the vertical positioning as needed */
-  left: 50%; /* Center the button horizontally */
-  transform: translateX(-50%); /* Center the button accurately */
-  padding: 10%; /* Adjust padding as needed */
-  z-index: -1;
+/* Style the background container */
+.background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
 }
+
+/* Style the logo image */
+.background img:first-child {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Style the button */
+#myButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#myButton:hover {
+  transform: scale(1.1);
+}
+
+/* Style the button image */
+#myButton img {
+  max-width: 20%;
+  height: auto;
+}
+
+/* Add any additional styles here */
