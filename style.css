@@ -9,8 +9,8 @@ html {
 .background {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   height: 100vh;
   background-color: #f0f0f0;
 }
@@ -19,7 +19,7 @@ html {
 .background img:first-child {
   max-width: 100%;
   height: 100%;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 /* Style the button */
@@ -30,13 +30,14 @@ html {
   transition: transform 0.3s ease;
   position: relative;
   bottom: 200px;
+  margin: auto;
   border-radius: 50%;
   width: 35%;
   height: 10%;
 }
 
 #myButton:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 /* Style the button image */
